@@ -1,37 +1,258 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
 </head>
 <body>
 
-<nav class="navbar">
- <span class="navbar-toggle" id="js-navbar-toggle">
-        &#9776;
-        </span>
-        <a href="#" class="logo">BMP</a>
-        <ul class="main-nav" id="js-menu">
-            <li>
-                <a href="#" class="nav-links">Home</a>
-            </li>
-            <li>
-                <a href="#" class="nav-links">Products</a>
-            </li>
-            <li>
-                <a href="#" class="nav-links">About Us</a>
-            </li>
-            <li>
-                <a href="#" class="nav-links">Contact Us</a>
-            </li>
-            <li>
-                <a href="#" class="nav-links">Blog</a>
-            </li>
-        </ul>
-</nav>
-<!--  
- &#9776;
--->
-<script src="./js/script.js"></script>
+    <div class="Navbar">
+        <div class="Navbar__Link logo">
+            <img src="./images/mobile_logo.jpg" class="mobile" />
+            <img src="./images/desktop_logo.jpg" class="desktop" />
+        </div>
+        <div class="Navbar__Link Navbar__Link-toggle" id="js-navbar-toggle">
+            <span>
+                &#9776;
+            </span>
+        </div>
+
+        <nav class="Navbar__Items Navbar__Items--right" id="js-menu">
+            <div class="Navbar__Link">
+                <a href="#" class="nav-links">ABOUT</a>
+            </div>
+            <div class="Navbar__Link">
+                <a href="#" class="nav-links">PEOPLE</a>
+            </div>
+            <div class="Navbar__Link">
+                <a href="#" class="nav-links">WORK</a>
+            </div>
+            <div class="Navbar__Link">
+                <a href="#" class="nav-links">CYLINDR</a>
+            </div>
+            <div class="Navbar__Link">
+                <a href="#" class="nav-links">CONTACT</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container container_backgroundImage">
+        <div class="containerBox">
+            <div class="container_title">We&#39;re BMB.  Ad man with a genuine respect for everyday humans.</div>
+            <div class="container_subtitle">We believe only human brand wins. <br> Wanna humanize your brand?</div>
+            <div class="container_button">
+                <a href="#" title="LEARN MORE" class="c-btn" tabindex="0">COME AND SAY HELLO</a>
+            </div>
+            <div class="mouse_scroll">
+
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div>
+                    <span class="m_scroll_arrows unu"></span>
+                    <span class="m_scroll_arrows doi"></span>
+                    <span class="m_scroll_arrows trei"></span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="container1">
+        <div class="container_title1">Ideas that<br> create their<br> own energy.</div>
+        <div class="container_subtitle1">We believe advertising has to be the start of something, not the end of it. We create work that people want to be part of, that gets under the skin of culture, that continues to grow once we&#39;ve released it.</div>
+    </div>
+    <div class="component-images">
+        <div class="image-container image1">
+            <img src="./images/component_image_1.jpg" alt="Sitting man in a room" />
+            <div class="textBox">
+                <div>MY FUTURE SELF</div>
+                <div><small>NEW BALANCE</small></div>
+            </div>
+        </div>
+
+        <div class="image-container image2">
+            <img src="./images/component_image_2.png" alt="The scene from Rubicon Spring commercial on the beach" />
+            <div class="textBox">
+                <div>WHO`S DADDY?</div>
+                <div><small>RUBICON</small></div>
+            </div>
+        </div>
+
+        <div class="image-container image4">
+            <img src="./images/component_image_3.jpg" alt="The elephant eating nuts" />
+            <div class="textBox">
+                <div>THE NUT NUT`S NUT</div>
+                <div><small> KP SNACKS   </small></div>
+            </div>
+        </div>
+        <div class="image-container image_desktop image3">
+            <img src="./images/component_image_4.jpg" alt="The transformative power of quality life" />
+            <div class="textBox">
+                <div>THE TRANSFORMATIVE POWER  OF QUALITY LIFE</div>
+                <div><small>NEW BALANCE</small></div>
+            </div>
+        </div>
+        <div class="image-container image_desktop image5">
+            <img src="./images/component_image_5.jpg" alt="1000 years of wisdom" />
+            <div class="textBox">
+                <div>1,000 YEARS OF WISDOM</div>
+                <div><small>ROWSE</small></div>
+            </div>
+        </div>
+    </div>
+    <div class="container container_carousel">
+        <div class="container_button">
+            <a href="#" title="LEARN MORE" class="a-btn" tabindex="0">SEE MORE CASES</a>
+        </div>
+        <div class="carousel_text"><span style='font-size:20px;'>&#8212;</span>  OUR CLIENTS ABOUT US</div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="slide slide1">
+            <img src="./images/coma_icon.jpg" alt="Green coma icon">
+            <img src="./images/coma_icon.jpg" alt="Green coma icon">
+            <img src="./images/round_portat.png" alt="The round photo of Frank Hyde">
+
+            <div class="container_title2">
+                <p>Frank Hyde</p>
+                <p>PRODE MEMBERS</p>
+            </div>
+            <div class="container_subtitle2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis consectetur hendrerit. Nunc pharetra, purus sed cursus finibus, nunc orci pharetra lectus.</div>
+        </div>
+        <div class="slide slide2">
+            <img src="./images/coma_icon.jpg" alt="Green coma icon">
+            <img src="./images/coma_icon.jpg" alt="Green coma icon">
+            <img src="./images/round_portat.png" alt="The round photo of Frank Hyde">
+
+            <div class="container_title2">
+                <p>Martin Schiller</p>
+                <p>PRODE MEMBERS</p>
+            </div>
+            <div class="container_subtitle2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis consectetur hendrerit. Nunc pharetra, purus sed cursus finibus, nunc orci pharetra lectus.</div>
+        </div>
+        <div class="slide slide3">
+            <img src="./images/coma_icon.jpg" alt="Green coma icon">
+            <img src="./images/coma_icon.jpg" alt="Green coma icon">
+            <img src="./images/round_portat.png" alt="The round photo of Frank Hyde">
+
+            <div class="container_title2">
+                <p>Frank Frans</p>
+                <p>PRODE MEMBERS</p>
+            </div>
+            <div class="container_subtitle2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis consectetur hendrerit. Nunc pharetra, purus sed cursus finibus, nunc orci pharetra lectus.</div>
+        </div>
+
+        <div class="dots">
+            <span class="dotBlack" onclick="currentSlide(1)"></span>
+            <span class="dotBlack" onclick="currentSlide(2)"></span>
+            <span class="dotBlack" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <div>
+    </div>
+    <div class="container2">
+        <div class="container2_text"><span style='font-size:20px;'>&#8212;</span>  WHO WE DID FOR</div>
+        <div class="logos_container">
+            <img src="./images/batiste_logo.png" alt="Grey Batiste logo"/>
+            <img src="./images/hilton_logo.png" alt="Grey Hilton logo"/>
+            <img src="./images/linkedin_logo.png" alt="Grey Linkedin logo"/>
+            <img src="./images/mendelez_logo.png" alt="Grey Menedelez logo"/>
+            <img src="./images/newbalance_logo.png" alt="Grey New Balance logo"/>
+            <img src="./images/samsung_logo.png" alt="Grey Samsung logo"/>
+            <img src="./images/dugout_logo.png" alt="Grey Dugout logo"/>
+            <img src="./images/ClientEarth_Logo.png" alt="Grey Client Earth logo"/>
+        </div>
+        
+        <div class="horizontalSlider">
+            <div class="slider-item">
+                <img src="./images/bottom_gallery_1.jpg" alt="The BMP logo in a room" />
+            </div>
+            <div class="slider-item">
+                <img src="./images/bottom_gallery_2.jpg" alt="The table in the room" />
+            </div>
+            <div class="slider-item">
+                <img src="./images/bottom_gallery_3.jpg" alt="The poster in the office" />
+            </div>
+        </div>
+    </div>
+    <div id="mapSection">
+        <iframe src="https://snazzymaps.com/embed/174747" width="100%" height="100%" style="border:none;"></iframe>
+    </div>
+    <div class="footer">
+        <div id="address">
+
+            <span>BMP London</span>
+            <br>
+            The Crane Building<br>
+            22 Lavington Street<br>
+            London SE 01 ONZ<br>
+            -<br>
+            020 7632 0400<br>
+            -<br>
+
+        </div>
+        <div class="links">
+            <div class="footerLinks">
+                <ul class="footerNav">
+                    <li> <a href="#" class="nav-links">Privacy Policy</a></li>
+                    <li> <a href="#" class="nav-links">Tax Strategy</a></li>
+                    <li> <a href="#" class="nav-links">Get in touch</a></li>
+                </ul>
+            </div>
+            <div class="footerLinks">
+                <p>
+                    Copyright &copy;
+                    <script type="text/javascript">
+                        document.write("" + new Date().getFullYear());</script> | All rights reserved.
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/slick.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('.logos_container').slick({
+
+                arrows: false,
+                dots: true,
+                infinitiveScroll: true,
+                rows: 2,
+                slidesPerRow: 4,
+                slidesToScroll: 1,
+
+                responsive: [
+				  {
+                        breakpoint: 1000,
+                        settings: {
+                            slidesPerRow: 2,
+                            rows: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 500,
+                        settings: {
+                            slidesPerRow: 1,
+                            slidesToScroll: 1,
+                            rows: 2
+                        }
+                    }
+                  
+                ]
+
+            });
+                   });
+    </script>
 </body>
 </html>
